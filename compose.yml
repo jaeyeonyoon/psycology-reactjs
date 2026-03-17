@@ -10,7 +10,6 @@
     environment:
       - NODE_ENV=production
  
- 
   dev:
     build:
       context: .
@@ -35,16 +34,15 @@
           path: ./vite.config.ts
           target: /app/vite.config.ts
  
-services:
-  web:
-    build: .
-    ports:
-      - "3000:3000"
-    volumes:
-     - .:/app
-     - ./node_modules:/app/node_modules
-    environment:
-      NODE_ENV: development
-    stdin_open: true
-    tty: true
-    command: pnpm start 
+  # web:
+  #   build: .
+  #   ports:
+  #     - "5173:5173"
+  #   volumes:
+  #     - .:/app
+  #     - ./node_modules:/app/node_modules
+  #   environment:
+  #     NODE_ENV: development
+  #   stdin_open: true
+  #   tty: true
+  #   command: pnpm start 

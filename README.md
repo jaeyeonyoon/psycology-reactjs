@@ -7,7 +7,7 @@ Building Docker Image (Production)
 
 Building Docker Image (Dev)
 
-docker build -t psycology-reactjs-dev -f Dockerfile.dev .`
+`docker build -t psycology-reactjs-dev -f Dockerfile.dev .`
 
 ## 2. Run Docker
 
