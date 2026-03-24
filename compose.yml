@@ -27,6 +27,9 @@
           target: /app/src
           ignore:
             - node_modules/
+        - action: sync
+          path: ./public
+          target: /app/public
         - action: rebuild
           path: ./package.json
           target: /app/package.json
