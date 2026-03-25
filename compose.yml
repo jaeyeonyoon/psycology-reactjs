@@ -1,21 +1,21 @@
- services:
+services:
   prod:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - '3000:3000'
     env_file:
       - .env
     environment:
       - NODE_ENV=production
- 
+
   dev:
     build:
       context: .
       dockerfile: Dockerfile.dev
     ports:
-      - "5173:5173"
+      - '5173:5173'
     env_file:
       - .env
     environment:
@@ -36,7 +36,7 @@
         - action: rebuild
           path: ./vite.config.ts
           target: /app/vite.config.ts
- 
+
   # web:
   #   build: .
   #   ports:
@@ -48,4 +48,4 @@
   #     NODE_ENV: development
   #   stdin_open: true
   #   tty: true
-  #   command: pnpm start 
+  #   command: pnpm start
