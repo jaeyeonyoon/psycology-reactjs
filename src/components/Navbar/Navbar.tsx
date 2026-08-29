@@ -1,12 +1,18 @@
 import { useTranslation } from 'react-i18next'
+import '../../App.css'
 
 const Navbar = () => {
   const { t } = useTranslation()
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" role="navigation">
       <div className="navbar-left">
-        <a href="/" className="logo">
+        <img
+          className="logo-image"
+          src="./src/assets/osmanthus.png"
+          alt="logo"
+        ></img>
+        <a href="/" className="logo-font">
           {t('jb_psycology')}
         </a>
       </div>
