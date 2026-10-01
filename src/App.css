@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* TODO: Brand colors, font, variables */
+@theme {
+
+}
+
 #root {
   width: 100%;
 }
