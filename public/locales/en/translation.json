@@ -1,5 +1,10 @@
 {
+  "404_page_not_found": "404 - Page Not Found",
   "about": "About",
+  "about_page": "About Page",
   "contact": "Contact",
-  "jb_psycology": "JB Psychology"
+  "contact_page": "Contact Page",
+  "home": "Home",
+  "home_page": "Home Page",
+  "jb_psychology": "JB Psychology"
 }
