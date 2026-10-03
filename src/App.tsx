@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <div className="container mx-auto max-w-7xl bg-blue-400">
+    <div>
       <Navbar />
       <Footer />
     </div>
