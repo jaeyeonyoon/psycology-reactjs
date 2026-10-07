@@ -1,13 +1,24 @@
 {
   "404_page_not_found": "404 - Page Not Found",
   "about": "About",
+  "about_me": "About me",
   "about_page": "About Page",
+  "affiliations": "Affiliations",
   "contact": "Contact",
   "contact_page": "Contact Page",
   "copyright": "© 2027 JB Psychology",
+  "education_and_trainings": "Education and Trainings",
+  "fun_fact": "Fun Fact",
   "home": "Home",
   "home_page": "Home Page",
+  "how_i_can_help": "How I can help",
   "jb_psychology": "JB Psychology",
-  "welcome": "Welcome to JB Psychology!",
-  "welcome_sub": "The home of mental fitness!"
+  "jicelle_bendico": "Jicelle Bendico",
+  "languages_spoken": "Languages Spoken",
+  "populations": "Populations",
+  "professional_experiences": "Professional Experiences",
+  "registered_psychologist": "Registered Psychologist",
+  "skills": "Skills",
+  "specialties_and_expertise": "Specialties and Expertise",
+  "theraputic_approaches": "Theraputic Approaches"
 }

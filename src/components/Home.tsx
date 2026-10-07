@@ -1,32 +1,28 @@
 import { useTranslation } from "react-i18next";
-import Cards, { type CardsProp } from './Cards';
-import Banner, { type BannerProp } from './Banner';
+import Footer from '../Footer';
 import About from './About';
+import Banner, { type BannerProp } from './Banner';
 import Navbar from './Navbar';
-import Container from './Container';
+import Skills from './Skills';
 
 function Home() {
   const { t } = useTranslation();
-  const cardPropTest: CardsProp = {
-    title: 'Test CardProp',
-    description: 'This is a test description',
-  };
 
   const bannerProp: BannerProp = {
-    imgUrl: './src/assets/big-picture.jpg',
-    title: 'welcome',
-    subTitle: 'welcome_sub',
+    imgUrl: './src/assets/vase.jpg',
+    title: 'jicelle_bendico',
+    subTitle: 'registered_psychologist',
   };
 
-  // TODO: Fill homepage with content
   return (
     <>
       <Navbar />
       <Banner bannerProp={bannerProp} />
-      <Container>
-        <Cards cardsProp={cardPropTest} />
-      </Container>
       <About />
+      <Skills />
+      {/* TODO: Treatment approach from https://www.psychologytoday.com/ca/therapists/jicelle-bendico-edmonton-ab/1571134*/}
+      {/* TODO: Contact page */}
+      <Footer />
     </>
   );
 }
