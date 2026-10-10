@@ -16,18 +16,16 @@ function Accordions({ accordionProp }: { accordionProp: AccordionProp }) {
   const id = React.useId();
 
   return (
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls={`${id}-panel1-content`}
-          id={`${id}-panel1-header`}
-        >
-          <Typography component="span">{t(accordionProp.summary)}</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          {accordionProp.details}
-        </AccordionDetails>
-      </Accordion>
+    <Accordion>
+      <AccordionSummary
+        expandIcon={<ExpandMoreIcon />}
+        aria-controls={`${id}-panel1-content`}
+        id={`${id}-panel1-header`}
+      >
+        <Typography component="span">{t(accordionProp.summary)}</Typography>
+      </AccordionSummary>
+      <AccordionDetails>{accordionProp.details}</AccordionDetails>
+    </Accordion>
   );
 }
 

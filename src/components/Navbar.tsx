@@ -1,5 +1,4 @@
-import { useTranslation } from "react-i18next";
-import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { HashLink } from 'react-router-hash-link';
 import Container from './Container';
 
@@ -9,19 +8,16 @@ function Navbar() {
   return (
     <>
       <Container>
-        <nav
-          className="flex items-center justify-between px-4 py-4 border-b text-black font-semibold"
-          role="navigation"
-        >
+        <nav className="fixed inset-x-0 top-4 z-20 mx-auto flex w-[calc(100%-2rem)] max-w-7xl items-center justify-between rounded-full p-5 font-semibold shadow backdrop-blur-lg inset-ring inset-ring-white/70">
           <div className="flex">
-            <Link to="/">{t('jb_psychology')}</Link>
+            <HashLink smooth to="#home">
+              {t('jb_psychology')}
+            </HashLink>
           </div>
 
           {/* TODO: Collapse into menu based on media size */}
-          <ul className="flex gap-6 text-black">
-            <li>
-              <HashLink to="/">{t('home')}</HashLink>
-            </li>
+          {/* TODO: Make link text more visible */}
+          <ul className="flex gap-6">
             <li>
               <HashLink smooth to="#about">
                 {t('about')}

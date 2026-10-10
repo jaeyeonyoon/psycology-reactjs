@@ -4,6 +4,7 @@ import About from './About';
 import Banner, { type BannerProp } from './Banner';
 import Navbar from './Navbar';
 import Skills from './Skills';
+import Contact from './Contact';
 
 function Home() {
   const { t } = useTranslation();
@@ -22,6 +23,7 @@ function Home() {
       <Skills />
       {/* TODO: Treatment approach from https://www.psychologytoday.com/ca/therapists/jicelle-bendico-edmonton-ab/1571134*/}
       {/* TODO: Contact page */}
+      <Contact />
       <Footer />
     </>
   );
