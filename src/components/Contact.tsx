@@ -34,7 +34,10 @@ function Contact() {
 
           <div className="flex flex-col">
             {contactProps.map((contactInfo) => (
-              <div className="flex flex-row items-center m-3">
+              <div
+                key={crypto.randomUUID()}
+                className="flex flex-row items-center m-3"
+              >
                 <div className="rounded-full bg-[#F7D327] p-4">
                   {contactInfo.icon}
                 </div>

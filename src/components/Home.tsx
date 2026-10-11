@@ -22,7 +22,6 @@ function Home() {
       <About />
       <Skills />
       {/* TODO: Treatment approach from https://www.psychologytoday.com/ca/therapists/jicelle-bendico-edmonton-ab/1571134*/}
-      {/* TODO: Contact page */}
       <Contact />
       <Footer />
     </>
